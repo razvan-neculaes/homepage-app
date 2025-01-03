@@ -20,7 +20,7 @@ const Header = () => {
           onClick={onToggle}
         />
       </Flex>
-      <HamburgerMenu isOpen={isOpen} onClose={onToggle} />
+      {isOpen && <HamburgerMenu isOpen={isOpen} onClose={onToggle} />}
     </Box>
   );
 };
